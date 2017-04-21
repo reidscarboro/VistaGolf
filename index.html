@@ -4,17 +4,23 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Vista Golf</title>
-    <style>
-    /* a style sheet needs to be present for cursor hiding and custom cursors to work. */
-    </style>
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+    <script src="TemplateData/UnityProgress.js"></script>
   </head>
-  <body>
+  <body class="template">
+    <div class="template-wrap clear">
+      <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="768px" width="1024px"></canvas>
+      <br>
+      <div class="logo"></div>
+      <div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
+      <div class="title">Vista Golf</div>
+    </div>
     <p style="width: 100%; text-align: center">
-      <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="800px" width="800px"></canvas>
       <br>
       <br>
       <br>
-      Vista Golf alpha_0.2 - 4/13/17
+      Vista Golf alpha_0.5 - 4/21/17
       <br>
       <br>
       Thank you for playing!
