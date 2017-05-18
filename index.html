@@ -3,17 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Vista Golf</title>
+    <title>Unity WebGL Player | Vista Golf</title>
     <link rel="stylesheet" href="TemplateData/style.css">
     <link rel="shortcut icon" href="TemplateData/favicon.ico" />
     <script src="TemplateData/UnityProgress.js"></script>
   </head>
   <body class="template">
     <div class="template-wrap clear">
-      <br>
-      <br>
-      <br>
-      <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="768px" width="1024px"></canvas>
+      <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="720px" width="960px"></canvas>
       <br>
       <div class="logo"></div>
       <div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
@@ -33,14 +30,14 @@
     <script type='text/javascript'>
   var Module = {
     TOTAL_MEMORY: 268435456,
-    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+    errorhandler: null,     // arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
     compatibilitycheck: null,
-    backgroundColor: "#70C6D1",
-    splashStyle: "Dark",
-    dataUrl: "Release/Release.data",
-    codeUrl: "Release/Release.js",
-    asmUrl: "Release/Release.asm.js",
-    memUrl: "Release/Release.mem",
+    backgroundColor: "#22608E",
+    splashStyle: "Light",
+    dataUrl: "Release/vistaGolfWebGL.data",
+    codeUrl: "Release/vistaGolfWebGL.js",
+    asmUrl: "Release/vistaGolfWebGL.asm.js",
+    memUrl: "Release/vistaGolfWebGL.mem",
   };
 </script>
 <script src="Release/UnityLoader.js"></script>
